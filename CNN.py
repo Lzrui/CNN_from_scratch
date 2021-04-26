@@ -316,8 +316,8 @@ for epoch in range(5):
             num_correct = 0
         
         l,acc = train(im,label)
-        loss += 1
-        num_correct += 1
+        loss += l
+        num_correct += acc
 
 # Test the CNN
 print('\n--- Testing the CNN ---')
